@@ -768,7 +768,7 @@ static GtkWidget *create_mpris_widget(VenomDesktopAPI *api) {
     gtk_widget_show_all(S.root_eb);
 
     poll_mpris(NULL);
-    g_timeout_add(2000, poll_mpris, NULL);
+    g_timeout_add(10, poll_mpris, NULL);
 
     return S.root_eb;
 }
